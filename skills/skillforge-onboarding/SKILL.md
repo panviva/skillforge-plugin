@@ -57,7 +57,7 @@ skillforge status
 
 If `skillforge: command not found` after plugin install — the CLI wasn't bootstrapped yet. Run:
 ```bash
-pip install git+https://github.com/upld-internal/skillforge.git
+pip install git+https://github.com/panviva/pv-ai-skillforge.git
 ```
 
 ## Step 5 — Initialize your project
@@ -80,7 +80,7 @@ Skills marked `[x]` are installed and ready. Restart Claude Code to load them.
 | What to update | Command |
 |---|---|
 | Project skills to latest versions | `skillforge update` |
-| The SkillForge CLI | `pip install --upgrade git+https://github.com/upld-internal/skillforge.git` |
+| The SkillForge CLI | `pip install --upgrade git+https://github.com/panviva/pv-ai-skillforge.git` |
 | The Claude Code plugin itself | `/plugin update skillforge` |
 
 ## Error Reference
@@ -89,6 +89,6 @@ Skills marked `[x]` are installed and ready. Restart Claude Code to load them.
 |---|---|---|
 | Okta "access denied" | Step 1 not done | Ping admin |
 | API key dialog closed before copy | Clicked away | Generate new key, delete unused |
-| `skillforge: command not found` | CLI not bootstrapped | `pip install git+https://github.com/upld-internal/skillforge.git` |
+| `skillforge: command not found` | CLI not bootstrapped | `pip install git+https://github.com/panviva/pv-ai-skillforge.git` |
 | `init` returns 401 | Wrong api_key | Re-run `skillforge auth login` |
 | `init` returns 404 on project | Wrong project name or wrong Okta group | Check name in dashboard |

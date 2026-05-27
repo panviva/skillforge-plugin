@@ -18,7 +18,7 @@ Manage your team's AI agent skills directly from Claude Code. Install, upload, s
 If `skillforge` isn't on your PATH yet, install the CLI:
 
 ```bash
-pip install git+https://github.com/upld-internal/skillforge.git
+pip install git+https://github.com/panviva/pv-ai-skillforge.git
 ```
 
 Then authenticate and initialize:
@@ -33,7 +33,7 @@ skillforge init <project-name>
 To update the CLI to the latest version:
 
 ```bash
-pip install --upgrade git+https://github.com/upld-internal/skillforge.git
+pip install --upgrade git+https://github.com/panviva/pv-ai-skillforge.git
 ```
 
 To update the Claude Code skill itself:
