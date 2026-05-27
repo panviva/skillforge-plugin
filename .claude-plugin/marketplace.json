@@ -1,0 +1,19 @@
+{
+  "name": "panviva",
+  "owner": {
+    "name": "panviva"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for Upland Software teams."
+  },
+  "plugins": [
+    {
+      "name": "skillforge",
+      "source": {
+        "source": "github",
+        "repo": "panviva/skillforge-plugin"
+      },
+      "description": "Enterprise AI skill library — install, upload, and manage team skills from Claude Code."
+    }
+  ]
+}

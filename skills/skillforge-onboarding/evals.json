@@ -1,0 +1,17 @@
+[
+  {
+    "name": "fresh-onboard-full-flow",
+    "input": "I just joined the Panviva team and my manager told me to 'get SkillForge set up.' I have no idea what that means or where to start. Can you walk me through it?",
+    "expected_output": "Skill walks through all 7 steps in order, starting with the Okta group admin ask, pausing for user confirmation between steps, and ending with `skillforge init <project-name>` after asking which project."
+  },
+  {
+    "name": "init-fails-with-401",
+    "input": "I ran `skillforge init panviva-core` and got a 401 Unauthorized error. What's wrong?",
+    "expected_output": "Skill jumps to the error table, identifies that api_key or server_url isn't set correctly, has the user run `skillforge config get server_url` and `skillforge config get api_key`, and re-runs steps 5/6 if either is missing."
+  },
+  {
+    "name": "cli-not-found-after-install",
+    "input": "I ran `pip install git+https://github.com/panviva/pv-ai-skillforge.git` and it succeeded, but when I run `skillforge --version` I get 'command not found'. I'm on Windows.",
+    "expected_output": "Skill recognises the Windows PATH/Python-version mismatch path, suggests `py -m skillforge`, and flags the known `ModuleNotFoundError: No module named 'src'` failure mode as an alternate possibility to check for."
+  }
+]

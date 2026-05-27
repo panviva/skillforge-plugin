@@ -1,0 +1,29 @@
+{
+  "skill_name": "skillforge-onboarding",
+  "evals": [
+    {
+      "id": "fresh-onboard-full-flow",
+      "name": "New team member full onboarding flow",
+      "prompt": "I just joined the Panviva team and my manager told me to get SkillForge set up. I have no idea what that means or where to start. Can you walk me through it?",
+      "expected_output": "Skill walks through all onboarding steps in order, starting with Okta group admin access request, pausing for user confirmation at each step, ending with skillforge init and project-specific setup after asking which project to initialize",
+      "files": [],
+      "working_directory": ""
+    },
+    {
+      "id": "init-fails-with-401",
+      "name": "Handle 401 Unauthorized error during skillforge init",
+      "prompt": "I ran skillforge init panviva-core and got a 401 Unauthorized error. What is wrong?",
+      "expected_output": "Skill jumps to error diagnosis, identifies api_key or server_url misconfiguration, has user run skillforge config get server_url and skillforge config get api_key, re-runs config steps if either is missing or wrong",
+      "files": [],
+      "working_directory": ""
+    },
+    {
+      "id": "cli-not-found-windows",
+      "name": "CLI not found on Windows after pip install",
+      "prompt": "I ran pip install git+https://github.com/panviva/pv-ai-skillforge.git and it succeeded, but skillforge --version says command not found on Windows",
+      "expected_output": "Skill recognises Windows PATH/Python-version mismatch, suggests py -m skillforge as fallback, flags known ModuleNotFoundError: No module named src failure mode as alternate possibility",
+      "files": [],
+      "working_directory": ""
+    }
+  ]
+}

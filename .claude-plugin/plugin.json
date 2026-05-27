@@ -1,0 +1,7 @@
+{
+  "name": "skillforge",
+  "description": "Enterprise AI skill library — install, upload, and manage team skills from Claude Code.",
+  "author": {
+    "name": "upld-internal"
+  }
+}
